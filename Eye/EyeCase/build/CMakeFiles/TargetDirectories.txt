@@ -1,7 +1,0 @@
-/home/ma-user/work/ypy/Eye/EyeCase/build/CMakeFiles/execute_op.dir
-/home/ma-user/work/ypy/Eye/EyeCase/build/CMakeFiles/edit_cache.dir
-/home/ma-user/work/ypy/Eye/EyeCase/build/CMakeFiles/rebuild_cache.dir
-/home/ma-user/work/ypy/Eye/EyeCase/build/CMakeFiles/list_install_components.dir
-/home/ma-user/work/ypy/Eye/EyeCase/build/CMakeFiles/install.dir
-/home/ma-user/work/ypy/Eye/EyeCase/build/CMakeFiles/install/local.dir
-/home/ma-user/work/ypy/Eye/EyeCase/build/CMakeFiles/install/strip.dir
