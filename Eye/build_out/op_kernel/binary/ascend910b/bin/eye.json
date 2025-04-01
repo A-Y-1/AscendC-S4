@@ -1,0 +1,220 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Eye/d=0,p=1/11,2",
+        "Eye/d=0,p=0/11,2",
+        "Eye/d=1,p=1/11,2",
+        "Eye/d=1,p=0/11,2"
+      ],
+      "staticKey": "f85430ea810bcece0ad5ee94170d23272e84c967e555fd47c88cf6140e75441c,86998a15c1db8299e223b165920e0d813ea9513c0dff36f4cbccf5e19cb19bdf",
+      "inputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "double",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [],
+      "attrs": [
+        {
+          "name": "num_rows",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_columns",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "batch_shape",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/eye/Eye_3b9cc303948328abb143cf9751aeca45.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Eye/d=0,p=1/0,2",
+        "Eye/d=0,p=0/0,2",
+        "Eye/d=1,p=1/0,2",
+        "Eye/d=1,p=0/0,2"
+      ],
+      "staticKey": "df6993f0aff95a474387fe0368894f5a81aec8bc776e4c13846639f0058e8b8d,ac4ec0fa4bb3696e0806b873c007ddc005744d2fc2472d3b8514b407a3b8f00b",
+      "inputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [],
+      "attrs": [
+        {
+          "name": "num_rows",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_columns",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "batch_shape",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/eye/Eye_816c1441cbd15be311865ca2c7f3f51a.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Eye/d=0,p=1/3,2",
+        "Eye/d=0,p=0/3,2",
+        "Eye/d=1,p=1/3,2",
+        "Eye/d=1,p=0/3,2"
+      ],
+      "staticKey": "a7aaf619f6521b4d9add17352555251f8063819f8f47b045406afc719e1bf7d5,23dd7cf4f2a3a6439fd5dfe3d2d7663b7e36509c1fa79be16f5af18158e4ddc3",
+      "inputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [],
+      "attrs": [
+        {
+          "name": "num_rows",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_columns",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "batch_shape",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/eye/Eye_8df36477ebcece51410b54d061a465db.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Eye/d=0,p=1/1,2",
+        "Eye/d=0,p=0/1,2",
+        "Eye/d=1,p=1/1,2",
+        "Eye/d=1,p=0/1,2"
+      ],
+      "staticKey": "e20c5a4786dbe0978cf7866339fe3023bf369e935a1f18227bcbd774ded710f6,0bd3ba2a23acb719ecdf8b12ef68affa74645868f696aaf5e936e997539269ee",
+      "inputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [],
+      "attrs": [
+        {
+          "name": "num_rows",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_columns",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "batch_shape",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/eye/Eye_cffede1d78449ad803ebc9111ff3e819.json"
+      }
+    }
+  ]
+}

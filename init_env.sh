@@ -100,4 +100,7 @@ fi
 export PATH=/home/ma-user/work/cmake-3.28.3-linux-aarch64/bin:$PATH
 echo 'export PATH=/home/ma-user/work/cmake-3.28.3-linux-aarch64/bin:$PATH' >> ~/.bashrc
 
-
+pip install tensorFlow
+pip install torch
+pip install protobuf==3.20.0
+pip install numpy==1.22.0
