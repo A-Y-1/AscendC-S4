@@ -1,0 +1,78 @@
+{
+  "Eye": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "optionalInputMode": "gen_placeholder",
+    "params": {
+      "inputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "paramType": "required",
+          "formatMode": "static_nd_agnostic"
+        }
+      ],
+      "outputs": [],
+      "attrs": [
+        {
+          "name": "num_rows"
+        },
+        {
+          "name": "num_columns"
+        },
+        {
+          "name": "batch_shape"
+        },
+        {
+          "name": "dtype"
+        }
+      ]
+    },
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": [
+          "Eye/d=0,p=1/11,2",
+          "Eye/d=0,p=0/11,2",
+          "Eye/d=1,p=1/11,2",
+          "Eye/d=1,p=0/11,2"
+        ],
+        "binPath": "ascend910b/eye/Eye_3b9cc303948328abb143cf9751aeca45.o",
+        "jsonPath": "ascend910b/eye/Eye_3b9cc303948328abb143cf9751aeca45.json"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": [
+          "Eye/d=0,p=1/0,2",
+          "Eye/d=0,p=0/0,2",
+          "Eye/d=1,p=1/0,2",
+          "Eye/d=1,p=0/0,2"
+        ],
+        "binPath": "ascend910b/eye/Eye_816c1441cbd15be311865ca2c7f3f51a.o",
+        "jsonPath": "ascend910b/eye/Eye_816c1441cbd15be311865ca2c7f3f51a.json"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": [
+          "Eye/d=0,p=1/3,2",
+          "Eye/d=0,p=0/3,2",
+          "Eye/d=1,p=1/3,2",
+          "Eye/d=1,p=0/3,2"
+        ],
+        "binPath": "ascend910b/eye/Eye_8df36477ebcece51410b54d061a465db.o",
+        "jsonPath": "ascend910b/eye/Eye_8df36477ebcece51410b54d061a465db.json"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": [
+          "Eye/d=0,p=1/1,2",
+          "Eye/d=0,p=0/1,2",
+          "Eye/d=1,p=1/1,2",
+          "Eye/d=1,p=0/1,2"
+        ],
+        "binPath": "ascend910b/eye/Eye_cffede1d78449ad803ebc9111ff3e819.o",
+        "jsonPath": "ascend910b/eye/Eye_cffede1d78449ad803ebc9111ff3e819.json"
+      }
+    ]
+  }
+}

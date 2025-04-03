@@ -1,0 +1,85 @@
+{
+ "binFileName": "Eye_3b9cc303948328abb143cf9751aeca45",
+ "binFileSuffix": ".o",
+ "blockDim": -1,
+ "coreType": "VectorCore",
+ "core_type": "AIV",
+ "intercoreSync": 0,
+ "kernelName": "Eye_3b9cc303948328abb143cf9751aeca45",
+ "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+ "memoryStamping": [],
+ "opParaSize": 24,
+ "parameters": [
+  null,
+  null
+ ],
+ "sha256": "d96d6f99b841cf6bb4a87e0e9a24838ec96800f5bdeed921992d78550dad8bf0",
+ "workspace": {
+  "num": 1,
+  "size": [
+   -1
+  ],
+  "type": [
+   0
+  ]
+ },
+ "kernelList": [
+  {
+   "kernelName": "Eye_3b9cc303948328abb143cf9751aeca45_0"
+  }
+ ],
+ "optionalInputMode": "gen_placeholder",
+ "compileInfo": {},
+ "supportInfo": {
+  "implMode": "high_performance",
+  "int64Mode": false,
+  "simplifiedKeyMode": 0,
+  "simplifiedKey": [
+   "Eye/d=0,p=1/11,2",
+   "Eye/d=0,p=0/11,2",
+   "Eye/d=1,p=1/11,2",
+   "Eye/d=1,p=0/11,2"
+  ],
+  "optionalInputMode": "gen_placeholder",
+  "staticKey": "f85430ea810bcece0ad5ee94170d23272e84c967e555fd47c88cf6140e75441c,86998a15c1db8299e223b165920e0d813ea9513c0dff36f4cbccf5e19cb19bdf",
+  "inputs": [
+   {
+    "name": "y",
+    "index": 0,
+    "dtype": "double",
+    "format": "ND",
+    "paramType": "required",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   }
+  ],
+  "outputs": [],
+  "attrs": [
+   {
+    "name": "num_rows",
+    "dtype": "int",
+    "value": 0
+   },
+   {
+    "name": "num_columns",
+    "dtype": "int",
+    "value": 0
+   },
+   {
+    "name": "batch_shape",
+    "dtype": "list_int",
+    "value": []
+   },
+   {
+    "name": "dtype",
+    "dtype": "int",
+    "value": 0
+   }
+  ],
+  "opMode": "dynamic",
+  "deterministic": "ignore"
+ },
+ "filePath": "ascend910b/bin/eye/Eye_3b9cc303948328abb143cf9751aeca45.json"
+}

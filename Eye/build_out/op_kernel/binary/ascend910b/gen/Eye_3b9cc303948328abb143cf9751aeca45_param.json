@@ -1,0 +1,44 @@
+{
+  "op_type": "Eye",
+  "op_list": [
+    {
+      "bin_filename": "Eye_3b9cc303948328abb143cf9751aeca45",
+      "inputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "double",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [],
+      "attrs": [
+        {
+          "name": "num_rows",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_columns",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "batch_shape",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 0
+        }
+      ]
+    }
+  ]
+}
