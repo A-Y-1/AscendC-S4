@@ -67,4 +67,14 @@ auto ret = aclnnHeavisideGetWorkspaceSize(inputTensor_[0], inputTensor_[1], outp
 ret = aclnnHeaviside(workspace, workspaceSize, handle, stream);
 ```
 
+### 6
+
+修改CaseTemplate/src/main.cpp中的文件读取为算子的输入文件：
+
+```c
+  //TODO 6：修改输入文件
+  ReadFile("../input/input_x.bin", fileSize, runner.GetInputBuffer<void>(0), runner.GetInputSize(0));
+  ReadFile("../input/input_values.bin", fileSize, runner.GetInputBuffer<void>(1), runner.GetInputSize(1));
+```
+
 至此算子已可以正常调用，接下来只需要修改gen_data.py和verify_result.py，修改golden结果生成为pytorch调用即可测试。
