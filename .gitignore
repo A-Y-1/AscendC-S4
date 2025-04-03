@@ -1,2 +1,8 @@
-Case
+Case/**/input/
+Case/**/output/
+CaseTemplate/input/
+CaseTemplate/output/
+*/build_out/
+
+
 
