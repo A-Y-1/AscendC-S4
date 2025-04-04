@@ -72,9 +72,25 @@ ret = aclnnHeaviside(workspace, workspaceSize, handle, stream);
 修改CaseTemplate/src/main.cpp中的文件读取为算子的输入文件：
 
 ```c
-  //TODO 6：修改输入文件
-  ReadFile("../input/input_x.bin", fileSize, runner.GetInputBuffer<void>(0), runner.GetInputSize(0));
-  ReadFile("../input/input_values.bin", fileSize, runner.GetInputBuffer<void>(1), runner.GetInputSize(1));
+bool SetInputData(OpRunner &runner)
+{
+    size_t fileSize = 0;
+    //TODO 6：修改输入文件
+    ReadFile("../input/input_x.bin", fileSize, runner.GetInputBuffer<void>(0), runner.GetInputSize(0));
+    ReadFile("../input/input_values.bin", fileSize, runner.GetInputBuffer<void>(1), runner.GetInputSize(1));
+    INFO_LOG("Set input success");
+    return true;
+}
+```
+
+修改ProcessOutputData函数的文件写出为算子输出文件：
+```c
+bool ProcessOutputData(OpRunner &runner)
+{
+    WriteFile("../output/output.bin", runner.GetOutputBuffer<void>(0), runner.GetOutputSize(0));
+    INFO_LOG("Write output success");
+    return true;
+}
 ```
 
 至此算子已可以正常调用，接下来只需要修改gen_data.py和verify_result.py，修改golden结果生成为pytorch调用即可测试。
