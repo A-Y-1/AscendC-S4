@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/ypy/AscendC-S4/CaseTemplate/src
+CMAKE_SOURCE_DIR = /root/ypy/AscendC-S4/Case/HeavisideCase/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/ypy/AscendC-S4/CaseTemplate/build
+CMAKE_BINARY_DIR = /root/ypy/AscendC-S4/Case/HeavisideCase/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/execute_op.dir/depend.make
@@ -70,60 +70,60 @@ include CMakeFiles/execute_op.dir/progress.make
 include CMakeFiles/execute_op.dir/flags.make
 
 CMakeFiles/execute_op.dir/operator_desc.cpp.o: CMakeFiles/execute_op.dir/flags.make
-CMakeFiles/execute_op.dir/operator_desc.cpp.o: /root/ypy/AscendC-S4/CaseTemplate/src/operator_desc.cpp
+CMakeFiles/execute_op.dir/operator_desc.cpp.o: /root/ypy/AscendC-S4/Case/HeavisideCase/src/operator_desc.cpp
 CMakeFiles/execute_op.dir/operator_desc.cpp.o: CMakeFiles/execute_op.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ypy/AscendC-S4/CaseTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/execute_op.dir/operator_desc.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/execute_op.dir/operator_desc.cpp.o -MF CMakeFiles/execute_op.dir/operator_desc.cpp.o.d -o CMakeFiles/execute_op.dir/operator_desc.cpp.o -c /root/ypy/AscendC-S4/CaseTemplate/src/operator_desc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ypy/AscendC-S4/Case/HeavisideCase/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/execute_op.dir/operator_desc.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/execute_op.dir/operator_desc.cpp.o -MF CMakeFiles/execute_op.dir/operator_desc.cpp.o.d -o CMakeFiles/execute_op.dir/operator_desc.cpp.o -c /root/ypy/AscendC-S4/Case/HeavisideCase/src/operator_desc.cpp
 
 CMakeFiles/execute_op.dir/operator_desc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/execute_op.dir/operator_desc.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ypy/AscendC-S4/CaseTemplate/src/operator_desc.cpp > CMakeFiles/execute_op.dir/operator_desc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ypy/AscendC-S4/Case/HeavisideCase/src/operator_desc.cpp > CMakeFiles/execute_op.dir/operator_desc.cpp.i
 
 CMakeFiles/execute_op.dir/operator_desc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/execute_op.dir/operator_desc.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ypy/AscendC-S4/CaseTemplate/src/operator_desc.cpp -o CMakeFiles/execute_op.dir/operator_desc.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ypy/AscendC-S4/Case/HeavisideCase/src/operator_desc.cpp -o CMakeFiles/execute_op.dir/operator_desc.cpp.s
 
 CMakeFiles/execute_op.dir/op_runner.cpp.o: CMakeFiles/execute_op.dir/flags.make
-CMakeFiles/execute_op.dir/op_runner.cpp.o: /root/ypy/AscendC-S4/CaseTemplate/src/op_runner.cpp
+CMakeFiles/execute_op.dir/op_runner.cpp.o: /root/ypy/AscendC-S4/Case/HeavisideCase/src/op_runner.cpp
 CMakeFiles/execute_op.dir/op_runner.cpp.o: CMakeFiles/execute_op.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ypy/AscendC-S4/CaseTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/execute_op.dir/op_runner.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/execute_op.dir/op_runner.cpp.o -MF CMakeFiles/execute_op.dir/op_runner.cpp.o.d -o CMakeFiles/execute_op.dir/op_runner.cpp.o -c /root/ypy/AscendC-S4/CaseTemplate/src/op_runner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ypy/AscendC-S4/Case/HeavisideCase/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/execute_op.dir/op_runner.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/execute_op.dir/op_runner.cpp.o -MF CMakeFiles/execute_op.dir/op_runner.cpp.o.d -o CMakeFiles/execute_op.dir/op_runner.cpp.o -c /root/ypy/AscendC-S4/Case/HeavisideCase/src/op_runner.cpp
 
 CMakeFiles/execute_op.dir/op_runner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/execute_op.dir/op_runner.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ypy/AscendC-S4/CaseTemplate/src/op_runner.cpp > CMakeFiles/execute_op.dir/op_runner.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ypy/AscendC-S4/Case/HeavisideCase/src/op_runner.cpp > CMakeFiles/execute_op.dir/op_runner.cpp.i
 
 CMakeFiles/execute_op.dir/op_runner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/execute_op.dir/op_runner.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ypy/AscendC-S4/CaseTemplate/src/op_runner.cpp -o CMakeFiles/execute_op.dir/op_runner.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ypy/AscendC-S4/Case/HeavisideCase/src/op_runner.cpp -o CMakeFiles/execute_op.dir/op_runner.cpp.s
 
 CMakeFiles/execute_op.dir/main.cpp.o: CMakeFiles/execute_op.dir/flags.make
-CMakeFiles/execute_op.dir/main.cpp.o: /root/ypy/AscendC-S4/CaseTemplate/src/main.cpp
+CMakeFiles/execute_op.dir/main.cpp.o: /root/ypy/AscendC-S4/Case/HeavisideCase/src/main.cpp
 CMakeFiles/execute_op.dir/main.cpp.o: CMakeFiles/execute_op.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ypy/AscendC-S4/CaseTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/execute_op.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/execute_op.dir/main.cpp.o -MF CMakeFiles/execute_op.dir/main.cpp.o.d -o CMakeFiles/execute_op.dir/main.cpp.o -c /root/ypy/AscendC-S4/CaseTemplate/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ypy/AscendC-S4/Case/HeavisideCase/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/execute_op.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/execute_op.dir/main.cpp.o -MF CMakeFiles/execute_op.dir/main.cpp.o.d -o CMakeFiles/execute_op.dir/main.cpp.o -c /root/ypy/AscendC-S4/Case/HeavisideCase/src/main.cpp
 
 CMakeFiles/execute_op.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/execute_op.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ypy/AscendC-S4/CaseTemplate/src/main.cpp > CMakeFiles/execute_op.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ypy/AscendC-S4/Case/HeavisideCase/src/main.cpp > CMakeFiles/execute_op.dir/main.cpp.i
 
 CMakeFiles/execute_op.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/execute_op.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ypy/AscendC-S4/CaseTemplate/src/main.cpp -o CMakeFiles/execute_op.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ypy/AscendC-S4/Case/HeavisideCase/src/main.cpp -o CMakeFiles/execute_op.dir/main.cpp.s
 
 CMakeFiles/execute_op.dir/common.cpp.o: CMakeFiles/execute_op.dir/flags.make
-CMakeFiles/execute_op.dir/common.cpp.o: /root/ypy/AscendC-S4/CaseTemplate/src/common.cpp
+CMakeFiles/execute_op.dir/common.cpp.o: /root/ypy/AscendC-S4/Case/HeavisideCase/src/common.cpp
 CMakeFiles/execute_op.dir/common.cpp.o: CMakeFiles/execute_op.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ypy/AscendC-S4/CaseTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/execute_op.dir/common.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/execute_op.dir/common.cpp.o -MF CMakeFiles/execute_op.dir/common.cpp.o.d -o CMakeFiles/execute_op.dir/common.cpp.o -c /root/ypy/AscendC-S4/CaseTemplate/src/common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ypy/AscendC-S4/Case/HeavisideCase/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/execute_op.dir/common.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/execute_op.dir/common.cpp.o -MF CMakeFiles/execute_op.dir/common.cpp.o.d -o CMakeFiles/execute_op.dir/common.cpp.o -c /root/ypy/AscendC-S4/Case/HeavisideCase/src/common.cpp
 
 CMakeFiles/execute_op.dir/common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/execute_op.dir/common.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ypy/AscendC-S4/CaseTemplate/src/common.cpp > CMakeFiles/execute_op.dir/common.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ypy/AscendC-S4/Case/HeavisideCase/src/common.cpp > CMakeFiles/execute_op.dir/common.cpp.i
 
 CMakeFiles/execute_op.dir/common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/execute_op.dir/common.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ypy/AscendC-S4/CaseTemplate/src/common.cpp -o CMakeFiles/execute_op.dir/common.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ypy/AscendC-S4/Case/HeavisideCase/src/common.cpp -o CMakeFiles/execute_op.dir/common.cpp.s
 
 # Object files for target execute_op
 execute_op_OBJECTS = \
@@ -135,17 +135,17 @@ execute_op_OBJECTS = \
 # External object files for target execute_op
 execute_op_EXTERNAL_OBJECTS =
 
-/root/ypy/AscendC-S4/CaseTemplate/output/execute_op: CMakeFiles/execute_op.dir/operator_desc.cpp.o
-/root/ypy/AscendC-S4/CaseTemplate/output/execute_op: CMakeFiles/execute_op.dir/op_runner.cpp.o
-/root/ypy/AscendC-S4/CaseTemplate/output/execute_op: CMakeFiles/execute_op.dir/main.cpp.o
-/root/ypy/AscendC-S4/CaseTemplate/output/execute_op: CMakeFiles/execute_op.dir/common.cpp.o
-/root/ypy/AscendC-S4/CaseTemplate/output/execute_op: CMakeFiles/execute_op.dir/build.make
-/root/ypy/AscendC-S4/CaseTemplate/output/execute_op: CMakeFiles/execute_op.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/ypy/AscendC-S4/CaseTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable /root/ypy/AscendC-S4/CaseTemplate/output/execute_op"
+/root/ypy/AscendC-S4/Case/HeavisideCase/output/execute_op: CMakeFiles/execute_op.dir/operator_desc.cpp.o
+/root/ypy/AscendC-S4/Case/HeavisideCase/output/execute_op: CMakeFiles/execute_op.dir/op_runner.cpp.o
+/root/ypy/AscendC-S4/Case/HeavisideCase/output/execute_op: CMakeFiles/execute_op.dir/main.cpp.o
+/root/ypy/AscendC-S4/Case/HeavisideCase/output/execute_op: CMakeFiles/execute_op.dir/common.cpp.o
+/root/ypy/AscendC-S4/Case/HeavisideCase/output/execute_op: CMakeFiles/execute_op.dir/build.make
+/root/ypy/AscendC-S4/Case/HeavisideCase/output/execute_op: CMakeFiles/execute_op.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/ypy/AscendC-S4/Case/HeavisideCase/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable /root/ypy/AscendC-S4/Case/HeavisideCase/output/execute_op"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/execute_op.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/execute_op.dir/build: /root/ypy/AscendC-S4/CaseTemplate/output/execute_op
+CMakeFiles/execute_op.dir/build: /root/ypy/AscendC-S4/Case/HeavisideCase/output/execute_op
 .PHONY : CMakeFiles/execute_op.dir/build
 
 CMakeFiles/execute_op.dir/clean:
@@ -153,6 +153,6 @@ CMakeFiles/execute_op.dir/clean:
 .PHONY : CMakeFiles/execute_op.dir/clean
 
 CMakeFiles/execute_op.dir/depend:
-	cd /root/ypy/AscendC-S4/CaseTemplate/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/ypy/AscendC-S4/CaseTemplate/src /root/ypy/AscendC-S4/CaseTemplate/src /root/ypy/AscendC-S4/CaseTemplate/build /root/ypy/AscendC-S4/CaseTemplate/build /root/ypy/AscendC-S4/CaseTemplate/build/CMakeFiles/execute_op.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/ypy/AscendC-S4/Case/HeavisideCase/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/ypy/AscendC-S4/Case/HeavisideCase/src /root/ypy/AscendC-S4/Case/HeavisideCase/src /root/ypy/AscendC-S4/Case/HeavisideCase/build /root/ypy/AscendC-S4/Case/HeavisideCase/build /root/ypy/AscendC-S4/Case/HeavisideCase/build/CMakeFiles/execute_op.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/execute_op.dir/depend
 

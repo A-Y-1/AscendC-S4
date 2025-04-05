@@ -1,7 +1,7 @@
 CMakeFiles/execute_op.dir/common.cpp.o: \
- /root/ypy/AscendC-S4/CaseTemplate/src/common.cpp \
+ /root/ypy/AscendC-S4/Case/HeavisideCase/src/common.cpp \
  /usr/include/stdc-predef.h \
- /root/ypy/AscendC-S4/CaseTemplate/src/../inc/common.h \
+ /root/ypy/AscendC-S4/Case/HeavisideCase/src/../inc/common.h \
  /usr/include/c++/11/cstdio \
  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/11/bits/os_defines.h \

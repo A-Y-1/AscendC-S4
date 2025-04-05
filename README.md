@@ -16,7 +16,7 @@
 ```json
 "ASCEND_CANN_PACKAGE_PATH": {
     "type": "PATH",
-    "value": "/usr/local/Ascend/ascend-toolkit/latest"
+    "value": "/home/ma-user/Ascend/ascend-toolkit/latest"
 },
 ```
 

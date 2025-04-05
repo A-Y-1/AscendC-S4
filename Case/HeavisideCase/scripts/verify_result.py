@@ -10,6 +10,8 @@ def verify_result(cal_result, golden):
     
     cal_result = np.fromfile(cal_result, dtype=resType) # 从bin文件读取实际运算结果
     golden = np.fromfile(golden, dtype=resType) # 从bin文件读取预期运算结果
+    inputValues = np.fromfile("input/input_values.bin", dtype=resType)
+    inputX= np.fromfile("input/input_x.bin", dtype=resType)
     result = np.abs(cal_result - golden) # 计算运算结果和预期结果偏差
     deno = np.maximum(np.abs(cal_result), np.abs(golden))  # 获取最大值并组成新数组
     result_atol = np.less_equal(result, loss) # 计算绝对误差
@@ -17,16 +19,23 @@ def verify_result(cal_result, golden):
     
     # tol 为 1 说明符合误差范围
     
-    # 检查错误位置
+    # # 检查错误位置
     for i in range(len(result_atol)):
         if not result_atol[i] or not result_rtol[i]:
             print(f"[ERROR] i={i}, cal={cal_result} , golden={golden}")
-            return False
+            break
         
     # case 误差检查方法
     if not result_rtol.all() and not result_atol.all():
         if np.sum(result_rtol == False) > cal_result.size * loss and np.sum(result_atol == False) > cal_result.size * loss: # 误差超出预期时返回打印错误，返回对比失败
             print("[ERROR] result error")
+            print(cal_result)
+            print("----------------------------------------")
+            print(golden)
+            print("----------------------------------------")
+            print(inputValues)
+            print("----------------------------------------")
+            print(inputX)
             return False
     print("test pass")
     return True

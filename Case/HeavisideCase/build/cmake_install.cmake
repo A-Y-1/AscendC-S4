@@ -1,4 +1,4 @@
-# Install script for directory: /root/ypy/AscendC-S4/CaseTemplate/src
+# Install script for directory: /root/ypy/AscendC-S4/Case/HeavisideCase/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/../output/execute_op"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/../output" TYPE EXECUTABLE FILES "/root/ypy/AscendC-S4/CaseTemplate/output/execute_op")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/../output" TYPE EXECUTABLE FILES "/root/ypy/AscendC-S4/Case/HeavisideCase/output/execute_op")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/../output/execute_op" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/../output/execute_op")
     file(RPATH_CHANGE
@@ -70,5 +70,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/ypy/AscendC-S4/CaseTemplate/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/ypy/AscendC-S4/Case/HeavisideCase/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

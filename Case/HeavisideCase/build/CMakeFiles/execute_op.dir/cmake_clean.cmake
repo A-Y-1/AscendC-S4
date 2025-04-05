@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/ypy/AscendC-S4/CaseTemplate/output/execute_op"
-  "/root/ypy/AscendC-S4/CaseTemplate/output/execute_op.pdb"
+  "/root/ypy/AscendC-S4/Case/HeavisideCase/output/execute_op"
+  "/root/ypy/AscendC-S4/Case/HeavisideCase/output/execute_op.pdb"
   "CMakeFiles/execute_op.dir/common.cpp.o"
   "CMakeFiles/execute_op.dir/common.cpp.o.d"
   "CMakeFiles/execute_op.dir/main.cpp.o"

@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/ypy/AscendC-S4/CaseTemplate/src
+CMAKE_SOURCE_DIR = /root/ypy/AscendC-S4/Case/HeavisideCase/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/ypy/AscendC-S4/CaseTemplate/build
+CMAKE_BINARY_DIR = /root/ypy/AscendC-S4/Case/HeavisideCase/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/execute_op.dir/clean
 CMakeFiles/execute_op.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/execute_op.dir/build.make CMakeFiles/execute_op.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/execute_op.dir/build.make CMakeFiles/execute_op.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ypy/AscendC-S4/CaseTemplate/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target execute_op"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ypy/AscendC-S4/Case/HeavisideCase/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target execute_op"
 .PHONY : CMakeFiles/execute_op.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/execute_op.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ypy/AscendC-S4/CaseTemplate/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ypy/AscendC-S4/Case/HeavisideCase/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/execute_op.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ypy/AscendC-S4/CaseTemplate/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ypy/AscendC-S4/Case/HeavisideCase/build/CMakeFiles 0
 .PHONY : CMakeFiles/execute_op.dir/rule
 
 # Convenience name for target.

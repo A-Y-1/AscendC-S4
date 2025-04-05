@@ -1,7 +1,7 @@
 CMakeFiles/execute_op.dir/op_runner.cpp.o: \
- /root/ypy/AscendC-S4/CaseTemplate/src/op_runner.cpp \
+ /root/ypy/AscendC-S4/Case/HeavisideCase/src/op_runner.cpp \
  /usr/include/stdc-predef.h \
- /root/ypy/AscendC-S4/CaseTemplate/src/../inc/op_runner.h \
+ /root/ypy/AscendC-S4/Case/HeavisideCase/src/../inc/op_runner.h \
  /usr/local/Ascend/ascend-toolkit/latest/runtime/include/aclnn/acl_meta.h \
  /usr/include/c++/11/cstdint \
  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
@@ -61,7 +61,7 @@ CMakeFiles/execute_op.dir/op_runner.cpp.o: \
  /usr/local/Ascend/ascend-toolkit/latest/runtime/include/acl/acl_base.h \
  /usr/local/Ascend/ascend-toolkit/latest/runtime/include/acl/acl_op.h \
  /usr/local/Ascend/ascend-toolkit/latest/runtime/include/acl/acl_mdl.h \
- /root/ypy/AscendC-S4/CaseTemplate/src/../inc/common.h \
+ /root/ypy/AscendC-S4/Case/HeavisideCase/src/../inc/common.h \
  /usr/include/c++/11/cstdio /usr/include/stdio.h \
  /usr/lib/gcc/aarch64-linux-gnu/11/include/stdarg.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
@@ -173,11 +173,11 @@ CMakeFiles/execute_op.dir/op_runner.cpp.o: \
  /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h \
- /root/ypy/AscendC-S4/CaseTemplate/src/../inc/operator_desc.h \
+ /root/ypy/AscendC-S4/Case/HeavisideCase/src/../inc/operator_desc.h \
  /usr/local/Ascend/ascend-toolkit/latest/opp/vendors/customize/op_api/include/aclnn_heaviside.h \
  /usr/include/c++/11/limits /usr/include/c++/11/cassert \
  /usr/include/assert.h \
  /usr/local/Ascend/ascend-toolkit/latest/atc/include/acl/acl_op_compiler.h \
  /usr/local/Ascend/ascend-toolkit/latest/atc/include/acl/acl_base.h \
  /usr/local/Ascend/ascend-toolkit/latest/atc/include/acl/acl_op.h \
- /root/ypy/AscendC-S4/CaseTemplate/src/../inc/common.h
+ /root/ypy/AscendC-S4/Case/HeavisideCase/src/../inc/common.h

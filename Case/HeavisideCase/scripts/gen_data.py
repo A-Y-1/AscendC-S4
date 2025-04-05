@@ -7,15 +7,16 @@ import os
 def case1():
     # 配置参数
     src_type = np.float32
-    shape = (379, 379)  # 指定二维形状
+    shape = (2048, 13, 15)  # 指定形状
     
     # 生成输入数据 (包含零值以触发Heaviside的values逻辑)
     np.random.seed(0)
-    input_x = np.random.uniform(-1, 1, shape).astype(src_type)  # 包含负数、零、正数
+    input_x = np.random.uniform(0, 1, shape).astype(src_type)  # 包含负数、零、正数
     input_values = np.random.uniform(0, 1, shape).astype(src_type)  # Heaviside的替换值
     
     # 手动添加更多零值以增强测试覆盖
-    input_x[input_x > -0.3] = 0  # 约30%的元素置零
+    input_x[input_x > 0.7] = 0  # 约30%的元素置零
+    input_x[input_x > 0.4] = -1
     
     # 转换为PyTorch Tensor
     input_x_cpu = torch.from_numpy(input_x)

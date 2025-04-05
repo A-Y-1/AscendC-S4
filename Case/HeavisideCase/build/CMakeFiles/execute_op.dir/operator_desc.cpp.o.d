@@ -1,7 +1,7 @@
 CMakeFiles/execute_op.dir/operator_desc.cpp.o: \
- /root/ypy/AscendC-S4/CaseTemplate/src/operator_desc.cpp \
+ /root/ypy/AscendC-S4/Case/HeavisideCase/src/operator_desc.cpp \
  /usr/include/stdc-predef.h \
- /root/ypy/AscendC-S4/CaseTemplate/src/../inc/common.h \
+ /root/ypy/AscendC-S4/Case/HeavisideCase/src/../inc/common.h \
  /usr/include/c++/11/cstdio \
  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/11/bits/os_defines.h \
@@ -170,4 +170,4 @@ CMakeFiles/execute_op.dir/operator_desc.cpp.o: \
  /usr/local/Ascend/ascend-toolkit/latest/runtime/include/acl/error_codes/ge_error_codes.h \
  /usr/local/Ascend/ascend-toolkit/latest/runtime/include/acl/acl_op.h \
  /usr/local/Ascend/ascend-toolkit/latest/runtime/include/acl/acl_mdl.h \
- /root/ypy/AscendC-S4/CaseTemplate/src/../inc/operator_desc.h
+ /root/ypy/AscendC-S4/Case/HeavisideCase/src/../inc/operator_desc.h

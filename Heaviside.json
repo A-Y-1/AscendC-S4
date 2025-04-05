@@ -1,0 +1,40 @@
+[{
+	"op": "Heaviside",
+	"language": "cpp",
+	"input_desc": [{
+		"name": "input",
+		"param_type": "required",
+		"format": [
+			"ND",
+			"ND"
+		],
+		"type": [
+			"float32",
+			"float16"
+		]
+	},
+	{
+		"name": "values",
+		"param_type": "required",
+		"format": [
+			"ND",
+			"ND"
+		],
+		"type": [
+			"float32",
+			"float16"
+		]
+	}],
+	"output_desc": [{
+		"name": "out",
+		"param_type": "required",
+		"format": [
+			"ND",
+			"ND"
+		],
+		"type": [
+			"float32",
+			"float16"
+		]
+	}]
+}]

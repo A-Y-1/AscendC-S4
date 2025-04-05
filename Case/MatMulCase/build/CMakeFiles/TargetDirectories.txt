@@ -1,0 +1,7 @@
+/root/ypy/AscendC-S4/Case/MatMulCase/build/CMakeFiles/execute_op.dir
+/root/ypy/AscendC-S4/Case/MatMulCase/build/CMakeFiles/edit_cache.dir
+/root/ypy/AscendC-S4/Case/MatMulCase/build/CMakeFiles/rebuild_cache.dir
+/root/ypy/AscendC-S4/Case/MatMulCase/build/CMakeFiles/list_install_components.dir
+/root/ypy/AscendC-S4/Case/MatMulCase/build/CMakeFiles/install.dir
+/root/ypy/AscendC-S4/Case/MatMulCase/build/CMakeFiles/install/local.dir
+/root/ypy/AscendC-S4/Case/MatMulCase/build/CMakeFiles/install/strip.dir
