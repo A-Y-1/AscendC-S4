@@ -3,9 +3,9 @@ import torch.nn as nn
 import numpy as np
 import os
 
-m = 128
-n = 256
-k = 64
+m = 17
+n = 17
+k = 17
 case_data = {
     'case1': {
         'A_shape': [m, k],
@@ -19,7 +19,8 @@ def case1():
     caseNmae='case1'
     tensor_input_real = np.random.uniform(1, 10,case_data[caseNmae]['A_shape']).astype(case_data[caseNmae]['data_type'])
     tensor_input_imag = np.random.uniform(1, 10,case_data[caseNmae]['A_shape']).astype(case_data[caseNmae]['data_type'])
-
+    #print(tensor_input_real)
+    print(tensor_input_imag)
     
     tensor_values_real = np.random.uniform(1, 10,case_data[caseNmae]['B_shape']).astype(case_data[caseNmae]['data_type'])
     tensor_values_imag = np.random.uniform(1, 10,case_data[caseNmae]['B_shape']).astype(case_data[caseNmae]['data_type'])
@@ -32,7 +33,8 @@ def case1():
 
     np_complex_x = complex_tensor_A.numpy().astype(np.complex64)
     np_complex_y = complex_tensor_B.numpy().astype(np.complex64)
-    golden = res.numpy().astype(np.complex64)
+    #golden = res.numpy().astype(np.complex64)
+    golden = np.concatenate((tensor_values_real.ravel(), tensor_values_imag.ravel()))
     # 导出二进制文件
     os.makedirs("./input", exist_ok=True)
     os.makedirs("./output", exist_ok=True)

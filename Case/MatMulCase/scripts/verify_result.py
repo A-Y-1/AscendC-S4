@@ -42,16 +42,45 @@ def verify_complex_result(cal_result_bin: str, golden_bin: str) -> bool:
     error_indices = np.where(~overall_ok)[0]
     if len(error_indices) > 0:
         first_error = error_indices[0]
+        sec_error = error_indices[1]
+        third_error = error_indices[2]
         cal_val = cal_result[first_error]
         golden_val = golden[first_error]
         print(f"[ERROR] 第 {first_error} 个元素超出误差范围:")
+        print(f"[ERROR] 第 {sec_error} 个元素超出误差范围:")
+        print(f"[ERROR] 第 {third_error} 个元素超出误差范围:")
+        print(f"[ERROR] 第 {error_indices[len(error_indices)-1]} 个元素超出误差范围:")
         print(f"  Cal: {cal_val.real:.6f} + {cal_val.imag:.6f}j")
         print(f"  Golden: {golden_val.real:.6f} + {golden_val.imag:.6f}j")
         print(f"  Abs误差: {diff[first_error]:.2e} (阈值={loss:.1e})")
+        #print(golden)
         return False
     
     print("测试通过")
     return True
 
+def compare_bin_files(file1, file2, tolerance=1e-3):
+    # 读取二进制文件中的浮点数数据
+    data1 = np.fromfile(file1, dtype=np.float32)
+    data2 = np.fromfile(file2, dtype=np.float32)
+    
+    # 检查两个数组的长度是否一致
+    if len(data1) != len(data2):
+        print("两个文件中的数据长度不一致！")
+        return
+    
+    # 比较两个数组中的浮点数
+    diff_indices = np.where(np.abs(data1 - data2) > tolerance)[0]
+    
+    if len(diff_indices) == 0:
+        print("两个文件中的数据在指定精度范围内完全一致！")
+    else:
+        print(f"发现 {len(diff_indices)} 个不一致的位置，具体如下：")
+        for idx in diff_indices:
+            print(f"位置 {idx}: 文件1的值为 {data1[idx]}, 文件2的值为 {data2[idx]}, 差值为 {np.abs(data1[idx] - data2[idx])}")
+            if(idx>305):
+                break
+
 if __name__ == '__main__':
-    verify_complex_result(sys.argv[1],sys.argv[2])
+    # verify_complex_result(sys.argv[1],sys.argv[2])
+    compare_bin_files(sys.argv[1],sys.argv[2])

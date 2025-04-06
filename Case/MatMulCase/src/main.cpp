@@ -26,9 +26,9 @@ OperatorDesc CreateOpDesc()
     // TODO 2：修改输入形状与类型
     // define operator
     int m,n,k;
-    m = 128;
-    n = 256;
-    k = 64;
+    m = 17;
+    n = 17;
+    k = 17;
     std::vector<int64_t> shape_x{m,k};
     std::vector<int64_t> shape_y {k,n};
     std::vector<int64_t> shape_output {m,n};
