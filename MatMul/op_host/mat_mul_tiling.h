@@ -3,12 +3,13 @@
 #include "tiling/tiling_api.h"
 namespace optiling {
 BEGIN_TILING_DATA_DEF(MatMulTilingData)
-  TILING_DATA_FIELD_DEF_STRUCT(TCubeTiling, cubeTilingData);
-  TILING_DATA_FIELD_DEF(uint32_t, maxBlockPerIter);
-  TILING_DATA_FIELD_DEF(uint32_t, xBlockInfo);
-  TILING_DATA_FIELD_DEF(uint32_t, yBlockInfo);
-  TILING_DATA_FIELD_DEF(uint32_t, zBlockInfo);
+TILING_DATA_FIELD_DEF_STRUCT(TCubeTiling, cubeTilingData);
+TILING_DATA_FIELD_DEF(uint32_t, maxBlockPerIter);
+TILING_DATA_FIELD_DEF(uint32_t, xBlockInfo);
+TILING_DATA_FIELD_DEF(uint32_t, yBlockInfo);
+TILING_DATA_FIELD_DEF(uint32_t, zBlockInfo);
+TILING_DATA_FIELD_DEF(uint32_t, zBlockInfoFloat);
 END_TILING_DATA_DEF;
 
 REGISTER_TILING_DATA_CLASS(MatMul, MatMulTilingData)
-}
+}  // namespace optiling

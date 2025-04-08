@@ -1,4 +1,3 @@
-
 #include "heaviside_tiling.h"
 #include "register/op_def_registry.h"
 #include "tiling/platform/platform_ascendc.h"
@@ -6,8 +5,8 @@
 namespace optiling {
 static ge::graphStatus TilingFunc(gert::TilingContext* context) {
   const static int BLOCK_SIZE = 32;
-  const static int TENSOR_NUM = 3;
-  static int BUFFER_NUM = 2;
+  const static int TENSOR_NUM = 4;
+  static int BUFFER_NUM = 1;
   HeavisideTilingData tiling;
   // get platformInfo
   uint64_t ub_size;
@@ -24,21 +23,48 @@ static ge::graphStatus TilingFunc(gert::TilingContext* context) {
   int32_t totalLength = context->GetInputTensor(0)->GetShapeSize();
   int32_t totalLengthAligned =
       (totalLength + blockElem - 1) / blockElem * blockElem;
-
-  // allocate
-  uint32_t totalBlocks = totalLengthAligned / blockElem;
-  uint32_t blockPerCore;
-  while (totalBlocks < coreNum * 50 && coreNum >= 2) coreNum /= 2;
-  blockPerCore = totalBlocks / coreNum;
-  // pack blockInfo
-  uint8_t nBigCore = totalBlocks % coreNum;
-  uint32_t maxBlockPerIter = ub_size / TENSOR_NUM / BUFFER_NUM / BLOCK_SIZE;
-  uint32_t blockInfo = (blockPerCore << 8) | nBigCore;
-  // printf("blockPerCore=%u coreNum=%d maxBlockPerIter=%d
-  // nBigCore=%d\n",blockPerCore, coreNum, maxBlockPerIter, nBigCore);
+  int32_t totalLengthValues = context->GetInputTensor(1)->GetShapeSize();
+  bool batch = false;
+  bool scalarVal = false;
+  uint8_t nBigCore;
+  uint32_t blockInfo;
+  uint32_t maxBlockPerIter;
+  uint32_t batchPerCore;
+  // printf("--------------------------\n %d
+  // %d\n-----------------------------\n", totalLength, totalLengthValues);
+  if (totalLengthValues < totalLength && totalLengthValues > 1) {
+    batch = true;
+    int32_t operateBatchs = totalLength / totalLengthValues;
+    if (operateBatchs < coreNum) coreNum = operateBatchs;
+    batchPerCore = operateBatchs / coreNum;
+    nBigCore = operateBatchs % coreNum;
+    blockInfo = (batchPerCore << 8) | nBigCore;
+    maxBlockPerIter = totalLengthValues;
+  } else if (totalLengthValues < totalLength && totalLengthValues == 1) {
+    scalarVal = true;
+    uint32_t totalBlocks = totalLengthAligned / blockElem;
+    uint32_t blockPerCore;
+    while (totalBlocks < coreNum * 50 && coreNum >= 2) coreNum /= 2;
+    blockPerCore = totalBlocks / coreNum;
+    nBigCore = totalBlocks % coreNum;
+    maxBlockPerIter = ub_size / (TENSOR_NUM - 1) / BUFFER_NUM / BLOCK_SIZE;
+    blockInfo = (blockPerCore << 8) | nBigCore;
+  } else {
+    // allocate
+    uint32_t totalBlocks = totalLengthAligned / blockElem;
+    uint32_t blockPerCore;
+    while (totalBlocks < coreNum * 50 && coreNum >= 2) coreNum /= 2;
+    blockPerCore = totalBlocks / coreNum;
+    // pack blockInfo
+    nBigCore = totalBlocks % coreNum;
+    maxBlockPerIter = ub_size / TENSOR_NUM / BUFFER_NUM / BLOCK_SIZE;
+    blockInfo = (blockPerCore << 8) | nBigCore;
+  }
   // set TILING DATA
   tiling.set_maxBlockPerIter(maxBlockPerIter);
   tiling.set_blockInfo(blockInfo);
+  tiling.set_batch(batch);
+  tiling.set_scalarVal(scalarVal);
   context->SetBlockDim(coreNum);
   tiling.SaveToBuffer(context->GetRawTilingData()->GetData(),
                       context->GetRawTilingData()->GetCapacity());
